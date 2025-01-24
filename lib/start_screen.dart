@@ -29,8 +29,9 @@ class StartScreen extends StatelessWidget {
               const SizedBox(height: 30),
               OutlinedButton(
                 onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
                       builder: (context) => const QuestionsScreen(),
                     ),
                   );
